@@ -1,9 +1,5 @@
 alias gitlog='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x1b[33m[%an]%x1b[39m%x20%s"'
 
-jsondump() { ruby -rubygems -ropen-uri -ryaml -e "require 'json'; puts JSON.parse(open('${1}').read).to_yaml" }; }
-
-[[ -s "/Users/kelly/.rvm/scripts/rvm" ]] && source "/Users/kelly/.rvm/scripts/rvm"
-
 function parse_git_branch_status {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   branch=${ref#refs/heads/}
