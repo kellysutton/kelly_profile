@@ -4,7 +4,7 @@ Cool stuff for git. Now with:
 
 * gitlog
 * gpom
-* Branch inf on the prompt
+* Branch info on the prompt
 
 ## Install process
 
